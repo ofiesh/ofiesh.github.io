@@ -4,95 +4,96 @@
 	<head>
 		<title>Nathanial Ofiesh's Resume</title>
 		<style>
+			body {
+				font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+			}
 			.col {
 				display: inline-block;
 				margin: 10px;
 				vertical-align: top;
 			}
+			@media not print {
+				.print-only {
+					display: none;
+				}
+			}
+			@media print{
+			   .noprint {
+			       display:none;
+			   }
+			}
+			h1, h2, h3 {
+				letter-spacing: 2px;
+			}
+			hr {
+			    border:0;
+			    height: 1px;
+			    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.25),
+			    	rgba(0, 0, 0, .50),
+			    	rgba(0, 0, 0, 0.25), 
+			    	rgba(0, 0, 0, 0.10),  
+			    	rgba(0, 0, 0, 0));
+			}
+			p {
+				margin-top: 0px;
+			}
+			li {
+				list-style-type: none;
+			}
 		</style>
 	</head>
 	<body>
-		<p>Nathanial Ofiesh</p>
-		<p><a href="http://stackoverflow.com/users/1207422/nathanial">stack<b>overflow</b></a></p>
-		<div class="col">
+		<h1>Nathanial Ofiesh</h1>
+		<hr />
+		<p class="noprint"><a href="http://stackoverflow.com/users/1207422/nathanial">stack<b>overflow</b> </a></p>
+		<p class="print-only">West Sacramento | 916-270-7664 | nathanial@ofiesh.com</p>
 			<h3>Key Strengths</h3>
-			<ul>
-				<li>Test Driven Development</li>
-				<li>Project Planning/Story Grooming</li>
-				<li>Team Leadership</li>
-				<li>Code Review</li>
-				<li>Scrum</li>
-				<li>Debugging, Optimization and Performance Profiling</li>
-				<li>Object Oriented Programming and Design</li>
-				<li>Functional Programming</li>
-				<li>Scalable and Stateless REST Services</li>
-				<li>Microservice and Project Architecture</li>
-			</ul>			
+			<p>Building scalable, highly available Java microservices from the ground up as well as refactoring existing architecture with an emphasis on Test Driven Development and Continuous Innigration.</p> 
+			<p>Planning projects from requirements and user stories, running scrum, leading grooming and task breakdown, managing the Software Development Lifecycle and making sure team members are focus and unblocked.</p>
 			<h3>Frameworks</h3>
-			<ul>
-				<li>Spring</li>
-				<li>Dropwizard</li>
-				<li>Angular</li>
-				<li>React</li>
-			</ul>
+			Spring, Dropwizard, Angular, React
 			<h3>Stack</h3>
-			<ul>
-				<li>Apache HTTPD</li>
-				<li>Apache Tomcat</li>
-				<li>Maven</li>
-				<li>Git</li>
-				<li>Vagrant</li>
-				<li>Docker</li>
-				<li>AWS</li>
-				<li>Google Cloud</li>
-			</ul>
-		</div>
-		<div class="col">
+			<p>Apache HTTPD, Apache Tomcat, Maven, Git<, Vagrant, Docker, AWS, Google Cloud</p>
 			<h3>Languages</h3>
-			<ul>
-				<li>Java</li>
-				<li>Javascript</li>
-				<li>SQL</li>
-				<li>Dart</li>
-				<li>Coldfusion</li>
-				<li>HTML</li>
-				<li>CSS</li>
-			</ul>
+			<p>Java, Javascript, SQL, Dart, Coldfusion, Groovy, HTML, CSS</p>
 			<h3>Some experience</h3>
-			<ul>
-				<li>Clojure</li>
-				<li>Common Lisp</li>
-				<li>Groovy</li>
-				<li>Go</li>
-				<li>Python</li>
-				<li>Chef</li>
-				<li>Puppet</li>
-			</ul>
+			<p>GO, Clojure, CLISP, Python, Chef, Puppet</p>
 			<h3>Databases</h3>
-			<ul>
-				<li>MySQL</li>
-				<li>PostgreSQL</li>
-				<li>SQL Server</li>
-				<li>Cassandra</li>
-				<li>DynamoDB</li>
-				<li>Google Cloud Datastore</li>
-				<li>Solr</li>
-				<li>Elasticsearch</li>
-			</ul>
+			<p>MySQL, PostgreSQL, SQL Server, Cassandra, DynamoDB, Google Cloud Datastore, Solr, Elasticsearch</p>
 		</div>
-		
+
 		<h1>Professional Experience</h1>
-		
+
 		<h2>Clear Capital</h2>
 		<p><b>Senior Software Developer</b></p>
 		<p><b>December 2015 - Present</b></p>
-		
+
+		<ul>
+			<li>Project Plannig, Project Leadership</li>
+			<li>Code Review</li>
+			<li>RESTful webservices</li>
+			<li>Java, Dropwizard, Spring, Maven</li>
+			<li>AWS, SQS, DynamoDB</li>
+			<li>Cassandra, SOLR</li>
+			<li>Git</li>
+		</ul>
+
+		<p>Lead projects designing and implementing features for valuation products and product order management.</p>
+
+		<p>Focused on developing and improving the performance of REST APIs, micro services and database architecture.</p>
+
+		<p>Made improvements to CIT and branch builder jobs in jenkins using the jenkins python api and built out CIT servers.</p>
+
+		<p>Converted services to DI frameworks.</p>
+
+		<p>Through unit and integration testing.</p>
 		<h2>Build.com</h2>
 		<p><b>Senior Software Developer</b></p>
 		<p><b>August 2010 - December 2015 (5 years 4 months)</b></p>
 		<ul>
 			<li>Project Plannig, Project Leadership</li>
 			<li>Code Review</li>
+			<li>RESTful Webservices</li>
 			<li>Java, Spring, Maven</li>
 			<li>Javascript, jQuery, jQuery UI, Micro-Templating</li>
 			<li>HTML</li>
@@ -125,8 +126,8 @@
 			Created Faucet-Finder as a way to help customers find faucets based on the images of other faucets they like.
 			It is an image comparison tool that presents a variety of faucets,
 			and drills down finding similar looking faucets based on the similarity of the images.</p>
-		<p>Worked on Cybersource, PayPal, and Google wallet integrations in both Java and ColdFusion.</p>		
-		
+		<p>Worked on Cybersource, PayPal, and Google wallet integrations in both Java and ColdFusion.</p>
+
 		<h2>Black Dog Studios</h2>
 		<p>Project Manager/Software Developer</p>
 		<p>March 2010 - August 2010 (6 months)</p>
@@ -151,7 +152,7 @@
 		<p>Managed  communication with existing clients.</p>
 		<p>Managed, edited and reviewed all clients' ConstantContact newsletters.</p>
 		<p>Managed the Apache server and host configurations for clients' websites.</p>
-		
+
 		<h2>Arora Web Solutions</h2>
 		<p>Owner/Full Stack Developer</p>
 		<p>October 2008 - December 2009 (1 year 3 months)</p>
@@ -181,7 +182,7 @@
 			<li>Elasticsearch</li>
 			<li>AWS S3</li>
 		</ul>
-		
+
 		<p>React application for automating the creation and tracking meal plans that meet the USDA dietary guidelines.</p>
 		<p>Java REST microservices services running on a dropwizard containers.</p>
 		<p>JWT for Auth</p>
